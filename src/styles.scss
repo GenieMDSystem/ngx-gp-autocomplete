@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+// Bootstrap
+@use "bootstrap/scss/bootstrap" as *;
+
 body {
   margin: 0;
   background: #f9f9f9;
@@ -14,7 +17,4 @@ pre {
   border-radius: 4px;
 }
 
-// Bootstrap
-@import 'node_modules/bootstrap/scss/bootstrap-grid';
-@import 'node_modules/bootstrap/scss/_mixins';
-@import 'node_modules/bootstrap/scss/utilities/api';
+
