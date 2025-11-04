@@ -1,8 +1,8 @@
 {
   "name": "@angular-magic/ngx-gp-autocomplete",
-  "version": "2.0.2",
-  "description": "This module is a wrapper for Google Places Autocomplete JS library",
-  "author": "Dan Cornilov",
+  "version": "2.0.3",
+  "description": "This module is a wrapper for Google Places Autocomplete JS library for Angular applications. ",
+  "author": "",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -35,13 +35,13 @@
   ],
   "peerDependencies": {
     "@angular/core": ">= 2.0.0",
-    "@googlemaps/js-api-loader": "^1.15.1"
+    "@googlemaps/js-api-loader": "^2.0.2"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@types/google.maps": "^3.52.0"
+    "@types/google.maps": "^3.58.1"
   },
   "sideEffects": false
 }

@@ -1,5 +1,5 @@
 import { AfterViewInit, Directive, ElementRef, EventEmitter, Input, NgZone, Output } from '@angular/core';
-import { Loader } from '@googlemaps/js-api-loader';
+import { importLibrary } from '@googlemaps/js-api-loader';
 import { NgxGpAutocompleteOptions } from './ngx-gp-autocomplete-options';
 import { NgxGpAutocompleteService } from './ngx-gp-autocomplete.service';
 
@@ -19,7 +19,6 @@ export class NgxGpAutocompleteDirective implements AfterViewInit {
   constructor(
     public el: ElementRef,
     private ngxGpAutocompleteService: NgxGpAutocompleteService,
-    private loader: Loader,
     private ngZone: NgZone,
   ) {
   }
@@ -31,10 +30,10 @@ export class NgxGpAutocompleteDirective implements AfterViewInit {
 
     if (this.ngxGpAutocompleteService.getGooglePersistenceCheck()) {
       if (!this.isGoogleLibExists()) {
-        this.loader.importLibrary("places").then(() => this.initialize(), console.error);
+        importLibrary("places").then(() => this.initialize(), console.error);
       }
     } else {
-      this.loader.importLibrary("places").then(() => this.initialize(), console.error);
+      importLibrary("places").then(() => this.initialize(), console.error);
     }
   }
 

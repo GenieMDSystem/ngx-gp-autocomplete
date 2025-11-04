@@ -7,7 +7,11 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { NgxGpAutocompleteModule } from "@angular-magic/ngx-gp-autocomplete";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Loader } from "@googlemaps/js-api-loader";
+import { setOptions } from "@googlemaps/js-api-loader";
+
+setOptions({
+  key: 'AIzaSyAAO0i0wZ-Oj6WM9icq56pMV2mqUixrnqc'
+})
 
 @NgModule({
   declarations: [
@@ -22,15 +26,15 @@ import { Loader } from "@googlemaps/js-api-loader";
     NgxGpAutocompleteModule,
     BrowserAnimationsModule
   ],
-  providers: [
-    {
-      provide: Loader,
-      useValue: new Loader({
-        apiKey: 'AIzaSyAFaylOBsuhYPYw9YqWmhN370xTvc6DXYU',
-        libraries: ['places']
-      })
-    }
-  ],
+  // providers: [
+  //   {
+  //     provide: Loader,
+  //     useValue: new Loader({
+  //       apiKey: 'AIzaSyAFaylOBsuhYPYw9YqWmhN370xTvc6DXYU',
+  //       libraries: ['places']
+  //     })
+  //   }
+  // ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
