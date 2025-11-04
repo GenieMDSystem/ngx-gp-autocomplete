@@ -7,7 +7,8 @@ declare let google: any;
 
 @Directive({
   selector: '[ngx-gp-autocomplete]',
-  exportAs: 'ngx-places'
+  exportAs: 'ngx-places',
+  standalone: false
 })
 export class NgxGpAutocompleteDirective implements AfterViewInit {
   @Input() options: NgxGpAutocompleteOptions;

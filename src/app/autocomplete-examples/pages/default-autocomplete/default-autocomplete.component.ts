@@ -4,9 +4,10 @@ import { defaultFormHTML, defaultFormValidations } from "./form-code";
 import { FormControl } from "@angular/forms";
 
 @Component({
-  selector: 'app-default-autocomplete',
-  templateUrl: './default-autocomplete.component.html',
-  styleUrls: ['./default-autocomplete.component.scss']
+    selector: 'app-default-autocomplete',
+    templateUrl: './default-autocomplete.component.html',
+    styleUrls: ['./default-autocomplete.component.scss'],
+    standalone: false
 })
 export class DefaultAutocompleteComponent {
   autocompleteInputControl: FormControl = new FormControl<string>('');

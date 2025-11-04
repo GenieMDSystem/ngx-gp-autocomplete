@@ -4,9 +4,10 @@ import { NgxGpAutocompleteService } from "@angular-magic/ngx-gp-autocomplete";
 import { defaultFormHTML, defaultFormValidations } from "./form-code";
 
 @Component({
-  selector: 'app-multiple-inputs',
-  templateUrl: './multiple-inputs.component.html',
-  styleUrls: ['./multiple-inputs.component.scss']
+    selector: 'app-multiple-inputs',
+    templateUrl: './multiple-inputs.component.html',
+    styleUrls: ['./multiple-inputs.component.scss'],
+    standalone: false
 })
 export class MultipleInputsComponent {
   autocompleteInputControl: FormControl = new FormControl<string>('');

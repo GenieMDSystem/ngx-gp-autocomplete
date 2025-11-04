@@ -5,9 +5,10 @@ import { defaultFormHTML, defaultFormValidations } from "./form-code";
 import { NgxGpAutocompleteOptions } from "@angular-magic/ngx-gp-autocomplete";
 
 @Component({
-  selector: 'app-multiple-countries',
-  templateUrl: './multiple-countries.component.html',
-  styleUrls: ['./multiple-countries.component.scss']
+    selector: 'app-multiple-countries',
+    templateUrl: './multiple-countries.component.html',
+    styleUrls: ['./multiple-countries.component.scss'],
+    standalone: false
 })
 export class MultipleCountriesComponent {
   autocompleteInputControl: FormControl = new FormControl<string>('');
