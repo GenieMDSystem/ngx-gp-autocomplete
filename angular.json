@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-google-place:build:production"
+              "buildTarget": "ngx-google-place:build:production"
             },
             "development": {
-              "browserTarget": "ngx-google-place:build:development"
+              "buildTarget": "ngx-google-place:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-google-place:build"
+            "buildTarget": "ngx-google-place:build"
           }
         },
         "test": {
